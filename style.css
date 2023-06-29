@@ -4,10 +4,20 @@
     box-sizing: border-box;
 }
 
+.game-details {
+    color: #B8C6DC;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, .8);
+}
+
 .game-board {
     background-image: linear-gradient(lightblue 50%, white);
     width: 100%;
-    height: 600px;
+    height: 550px;
     margin: 0 auto;
     border-bottom: 50px solid rgba(0, 200, 0, .9);
     position: relative;
@@ -24,12 +34,14 @@
 
 @keyframes cloud-animation {
     from {
-       left: 100%; 
+        left: 100%;
     }
+
     to {
         left: -600px;
     }
 }
+
 .pipe {
     width: 80px;
     position: absolute;
@@ -41,6 +53,7 @@
     from {
         left: 100%;
     }
+
     to {
         left: -80px;
     }
@@ -60,15 +73,19 @@
     0% {
         bottom: 0;
     }
+
     40% {
         bottom: 180px;
     }
+
     50% {
         bottom: 180px;
     }
+
     60% {
         bottom: 180px;
     }
+
     100% {
         bottom: 0;
     }
@@ -81,4 +98,3 @@
     z-index: 1;
     opacity: 0;
 }
-
